@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Inventaris TU</title>
-  <style>
-    body {
-      margin:0;
-      font-family: Arial;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventaris TU</title>
 
-    .btn {
-      display:block;
-      margin:20px;
-      padding:15px;
-      background:#2563eb;
-      color:white;
-      text-align:center;
-      text-decoration:none;
-      border-radius:10px;
-      width:200px;
-    }
-  </style>
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.card{
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  width:320px;
+}
+
+h1{
+  margin-bottom:10px;
+  font-size:26px;
+}
+
+p{
+  font-size:14px;
+  opacity:0.8;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 20px;
+  background: linear-gradient(135deg,#22c55e,#16a34a);
+  color:white;
+  text-decoration:none;
+  border-radius:12px;
+  font-weight:bold;
+  transition:0.3s;
+  width:100%;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.footer{
+  margin-top:15px;
+  font-size:12px;
+  opacity:0.6;
+}
+</style>
+
 </head>
 <body>
 
-<h2 style="margin:20px;">Inventaris TU</h2>
+<div class="card">
 
-<a class="btn" target="_blank"
-   href="https://script.google.com/macros/s/AKfycbwb-WElaBPtPJUKjZEy5nOIFzUq1WcMcvSGB23h5GciRFFfiQJnqGGHcBdJs6jluZk/exec">
-  🚀 Buka Aplikasi
-</a>
+  <h1>📦 Inventaris TU</h1>
+  <p>Sistem Barang Masuk & Keluar Sekolah</p>
+
+  <a class="btn" target="_blank"
+     href="https://script.google.com/macros/s/AKfycbwb-WElaBPtPJUKjZEy5nOIFzUq1WcMcvSGB23h5GciRFFfiQJnqGGHcBdJs6jluZk/exec">
+    🚀 Buka Aplikasi
+  </a>
+
+  <div class="footer">
+    Powered by Google Apps Script
+  </div>
+
+</div>
 
 </body>
 </html>
